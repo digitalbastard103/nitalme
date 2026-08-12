@@ -38,8 +38,8 @@ Change them there and they propagate everywhere.
 - [ ] I Know a Guy → its URL
 - [ ] B-Synth → its URL
 - [ ] Lunchbox Legion → its URL
-- [ ] LinkedIn → your profile
-- [ ] Email → currently `hello@nital.me`; change if you want a different address
+- [x] ~~LinkedIn~~ - removed, not part of the site
+- [x] ~~Email~~ - done, `nitalyosef@gmail.com`
 
 TRKR already points to `https://trkr.fit`.
 
