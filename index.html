@@ -104,16 +104,24 @@
       <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
     </div>
     <div class="wrap">
-      <div class="sound__head reveal">
-        <p class="eyebrow mono">01 - Seven Stripes</p>
-        <p class="sound__links mono">
-          <a href="https://open.spotify.com/artist/0F7nyGu7KshD7ZRefVvqqL" target="_blank" rel="noopener" data-link="spotify">Spotify ↗</a>
-          <a href="https://www.youtube.com/@SevenStripes" target="_blank" rel="noopener" data-link="youtube">YouTube ↗</a>
-        </p>
-      </div>
-      <h2 class="sound__h reveal" id="sound-h">This is where<br>the noise comes from.</h2>
+      <div class="sound__grid">
+        <div class="sound__col-text">
+          <div class="sound__head reveal">
+            <p class="eyebrow mono">01 - Seven Stripes</p>
+            <p class="sound__links mono">
+              <a href="https://open.spotify.com/artist/0F7nyGu7KshD7ZRefVvqqL" target="_blank" rel="noopener" data-link="spotify">Spotify ↗</a>
+              <a href="https://www.youtube.com/@SevenStripes" target="_blank" rel="noopener" data-link="youtube">YouTube ↗</a>
+            </p>
+          </div>
+          <h2 class="sound__h reveal" id="sound-h">This is where<br>the noise comes from.</h2>
+          <div class="sound__text reveal">
+            <p>I’ve been playing piano and drums - and producing music on a computer - for years. Cubase is still where I feel most at home.</p>
+            <p>In 2014, I flew to Manhattan to study music production at Dubspot, a school dedicated to electronic music and the culture around it.</p>
+            <p>Under the name <em>Seven Stripes</em>, I’ve produced electronic music, original tracks and remixes. More recently, I’ve also started making what people might call “regular songs” - although I’m still not entirely sure what makes a song regular.</p>
+          </div>
+        </div>
 
-      <div class="sound__body">
+        <div class="sound__col-player">
         <div class="sound__player reveal">
           <figure class="player" id="player">
             <div class="player__art">
@@ -154,13 +162,6 @@
             </figcaption>
           </figure>
         </div>
-
-        <div class="sound__text reveal">
-          <p>I’ve been playing piano and drums - and producing music on a computer - for years. Cubase is still where I feel most at home.</p>
-          <p>In 2014, I flew to Manhattan to study music production at Dubspot, a school dedicated to electronic music and the culture around it.</p>
-          <p>Under the name <em>Seven Stripes</em>, I’ve produced electronic music, original tracks and remixes. More recently, I’ve also started making what people might call “regular songs” - although I’m still not entirely sure what makes a song regular.</p>
-        </div>
-      </div>
 
       <!-- ─────────────────────────────────────────────────────────────
            TRACKS. This list is the single source of truth for the player.
@@ -243,19 +244,7 @@
           </a>
         </li>
       </ol>
-
-      <div class="strip reveal" aria-hidden="true">
-        <!-- ASSET SLOT: Seven Stripes cover artwork, square, ~600×600 each.
-             Decorative drift only - the playable list is above. Duplicated
-             exactly twice so the marquee loops seamlessly. -->
-        <img src="assets/cover-01.svg" alt="" width="200" height="200">
-        <img src="assets/cover-02.svg" alt="" width="200" height="200">
-        <img src="assets/cover-03.svg" alt="" width="200" height="200">
-        <img src="assets/cover-04.svg" alt="" width="200" height="200">
-        <img src="assets/cover-01.svg" alt="" width="200" height="200">
-        <img src="assets/cover-02.svg" alt="" width="200" height="200">
-        <img src="assets/cover-03.svg" alt="" width="200" height="200">
-        <img src="assets/cover-04.svg" alt="" width="200" height="200">
+        </div>
       </div>
     </div>
   </section>

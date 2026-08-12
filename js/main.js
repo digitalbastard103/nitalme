@@ -138,13 +138,6 @@
     }, { passive: true });
   }
 
-  /* ── pause the artwork strip while hovered ─────────────── */
-  var strip = document.querySelector('.strip');
-  if (strip && !reduced) {
-    strip.addEventListener('pointerenter', function () { strip.style.animationPlayState = 'paused'; });
-    strip.addEventListener('pointerleave', function () { strip.style.animationPlayState = 'running'; });
-  }
-
   /* ── the Seven Stripes player ──────────────────────────── */
   (function () {
     var list = document.getElementById('tracks');
