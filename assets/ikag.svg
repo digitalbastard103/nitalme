@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640">
+  <rect width="900" height="640" fill="#F1EFE9"/>
+  <g stroke="#111111" stroke-width="1.5" opacity=".28" fill="none">
+    <path d="M450 320 L250 170"/><path d="M450 320 L680 180"/><path d="M450 320 L230 470"/>
+    <path d="M450 320 L700 460"/><path d="M450 320 L460 130"/><path d="M450 320 L440 530"/>
+    <path d="M250 170 L460 130"/><path d="M680 180 L700 460"/><path d="M230 470 L440 530"/>
+    <path d="M250 170 L230 470"/><path d="M460 130 L680 180"/>
+  </g>
+  <g stroke="#FF4E22" stroke-width="2.5" fill="none">
+    <path d="M450 320 L680 180"/><path d="M680 180 L700 460"/>
+  </g>
+
+  <g font-family="monospace" font-size="13" letter-spacing="1">
+    <g>
+      <rect x="370" y="298" width="160" height="44" rx="22" fill="#111111"/>
+      <text x="450" y="325" fill="#F1EFE9" text-anchor="middle">YOU</text>
+    </g>
+    <g>
+      <rect x="586" y="158" width="188" height="42" rx="21" fill="#FF4E22"/>
+      <text x="680" y="184" fill="#FFFFFF" text-anchor="middle">A FRIEND</text>
+    </g>
+    <g>
+      <rect x="596" y="438" width="208" height="42" rx="21" fill="#F1EFE9" stroke="#FF4E22" stroke-width="2"/>
+      <text x="700" y="464" fill="#111111" text-anchor="middle">&#8220;A GUY&#8221;</text>
+    </g>
+    <g fill="#F1EFE9">
+      <rect x="168" y="150" width="164" height="40" rx="20" fill="#F1EFE9" stroke="#CAC7BF" stroke-width="2"/>
+      <text x="250" y="175" fill="#111111" opacity=".6" text-anchor="middle">COLLEAGUE</text>
+      <rect x="152" y="450" width="156" height="40" rx="20" fill="#F1EFE9" stroke="#CAC7BF" stroke-width="2"/>
+      <text x="230" y="475" fill="#111111" opacity=".6" text-anchor="middle">NEIGHBOUR</text>
+      <rect x="386" y="110" width="148" height="40" rx="20" fill="#F1EFE9" stroke="#CAC7BF" stroke-width="2"/>
+      <text x="460" y="135" fill="#111111" opacity=".6" text-anchor="middle">COUSIN</text>
+      <rect x="366" y="510" width="148" height="40" rx="20" fill="#F1EFE9" stroke="#CAC7BF" stroke-width="2"/>
+      <text x="440" y="535" fill="#111111" opacity=".6" text-anchor="middle">GYM GUY</text>
+    </g>
+  </g>
+
+  <text x="48" y="596" font-family="monospace" font-size="14" letter-spacing="2" fill="#111111" opacity=".45">DO YOU KNOW A GUY?</text>
+</svg>

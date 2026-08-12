@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "nitalme",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["devserver.py", "5173"],
+      "port": 5173
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440">
+  <rect width="640" height="440" fill="#FFFFFF"/>
+  <rect width="640" height="86" fill="#0E7C86"/>
+  <text x="24" y="40" font-family="Georgia, serif" font-size="25" fill="#FFFFFF" font-weight="bold">Travel<tspan fill="#FFC742">Gurus</tspan></text>
+  <text x="24" y="60" font-family="Verdana, sans-serif" font-size="10" fill="#9FD4D9">your holiday, without the queue at the agency</text>
+  <g font-family="Verdana, sans-serif" font-size="9" fill="#FFFFFF">
+    <text x="404" y="34">FLIGHTS</text><text x="462" y="34">HOTELS</text><text x="516" y="34">PACKAGES</text><text x="586" y="34">DEALS</text>
+  </g>
+
+  <!-- search bar -->
+  <rect x="24" y="104" width="592" height="66" fill="#F1F7F8" stroke="#C9DFE2"/>
+  <g font-family="Verdana, sans-serif" font-size="9" fill="#0E7C86">
+    <text x="38" y="124">FROM</text><text x="182" y="124">TO</text><text x="326" y="124">DEPART</text><text x="440" y="124">RETURN</text>
+  </g>
+  <g fill="#FFFFFF" stroke="#AFC9CC">
+    <rect x="36" y="130" width="132" height="24"/><rect x="180" y="130" width="132" height="24"/>
+    <rect x="324" y="130" width="100" height="24"/><rect x="438" y="130" width="100" height="24"/>
+  </g>
+  <g font-family="Verdana, sans-serif" font-size="9" fill="#555555">
+    <text x="44" y="146">Tel Aviv (TLV)</text><text x="188" y="146">Anywhere</text><text x="332" y="146">12/07</text><text x="446" y="146">26/07</text>
+  </g>
+  <rect x="552" y="130" width="52" height="24" fill="#FFC742"/>
+  <text x="562" y="146" font-family="Verdana, sans-serif" font-size="10" fill="#5A4300" font-weight="bold">GO</text>
+
+  <!-- offers -->
+  <text x="24" y="200" font-family="Verdana, sans-serif" font-size="11" fill="#0E7C86" font-weight="bold">THIS WEEK&#8217;S PICKS</text>
+  <g>
+    <rect x="24" y="212" width="188" height="150" fill="#FFFFFF" stroke="#DDDDDD"/>
+    <rect x="25" y="213" width="186" height="82" fill="#7FB6BC"/>
+    <path d="M25 275 L80 240 L120 268 L160 232 L211 272 L211 295 L25 295 Z" fill="#4E8F96"/>
+    <circle cx="180" cy="234" r="12" fill="#FFC742"/>
+    <text x="34" y="316" font-family="Verdana, sans-serif" font-size="10" fill="#333333">Prague, 4 nights</text>
+    <text x="34" y="336" font-family="Verdana, sans-serif" font-size="13" fill="#CC3300" font-weight="bold">$399</text>
+
+    <rect x="226" y="212" width="188" height="150" fill="#FFFFFF" stroke="#DDDDDD"/>
+    <rect x="227" y="213" width="186" height="82" fill="#E4B77F"/>
+    <circle cx="330" cy="250" r="26" fill="#FFC742"/>
+    <rect x="227" y="278" width="186" height="17" fill="#C99A5F"/>
+    <text x="236" y="316" font-family="Verdana, sans-serif" font-size="10" fill="#333333">Barcelona, 5 nights</text>
+    <text x="236" y="336" font-family="Verdana, sans-serif" font-size="13" fill="#CC3300" font-weight="bold">$549</text>
+
+    <rect x="428" y="212" width="188" height="150" fill="#FFFFFF" stroke="#DDDDDD"/>
+    <rect x="429" y="213" width="186" height="82" fill="#9FC0D9"/>
+    <path d="M429 268 q46 -22 92 0 q46 22 94 0 L615 295 L429 295 Z" fill="#6E97B8"/>
+    <text x="438" y="316" font-family="Verdana, sans-serif" font-size="10" fill="#333333">Greek islands, 7 nights</text>
+    <text x="438" y="336" font-family="Verdana, sans-serif" font-size="13" fill="#CC3300" font-weight="bold">$720</text>
+  </g>
+
+  <rect x="24" y="386" width="592" height="1" fill="#DDDDDD"/>
+  <text x="24" y="410" font-family="Verdana, sans-serif" font-size="8" fill="#888888">Secure booking &#8226; Prices per person &#8226; TravelGurus Ltd.</text>
+</svg>

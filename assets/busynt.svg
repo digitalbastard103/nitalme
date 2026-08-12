@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640">
+  <rect width="900" height="640" fill="#0C0C0C"/>
+  <g stroke="#F1EFE9" opacity=".07">
+    <path d="M0 160 H900"/><path d="M0 320 H900"/><path d="M0 480 H900"/>
+    <path d="M225 0 V640"/><path d="M450 0 V640"/><path d="M675 0 V640"/>
+  </g>
+
+  <!-- scattered fragments -->
+  <g fill="#F1EFE9" opacity=".18">
+    <rect x="60" y="72" width="130" height="8" rx="4"/>
+    <rect x="60" y="92" width="84" height="8" rx="4"/>
+    <rect x="300" y="120" width="110" height="8" rx="4"/>
+    <rect x="620" y="86" width="150" height="8" rx="4"/>
+    <rect x="620" y="106" width="90" height="8" rx="4"/>
+    <rect x="120" y="520" width="120" height="8" rx="4"/>
+    <rect x="700" y="540" width="140" height="8" rx="4"/>
+    <rect x="380" y="560" width="96" height="8" rx="4"/>
+  </g>
+
+  <!-- signal lines converging -->
+  <g fill="none" stroke="#3157FF" stroke-width="1.5" opacity=".85">
+    <path d="M120 100 C 240 180, 320 240, 440 300"/>
+    <path d="M700 110 C 600 190, 540 240, 460 300"/>
+    <path d="M180 520 C 280 450, 360 380, 440 330"/>
+    <path d="M780 540 C 660 460, 540 380, 470 330"/>
+    <path d="M420 560 C 430 480, 440 400, 450 340"/>
+  </g>
+
+  <!-- the connected core -->
+  <g>
+    <rect x="330" y="276" width="240" height="86" rx="6" fill="#F1EFE9"/>
+    <rect x="352" y="298" width="120" height="10" rx="5" fill="#0C0C0C"/>
+    <rect x="352" y="318" width="180" height="8" rx="4" fill="#0C0C0C" opacity=".35"/>
+    <rect x="352" y="336" width="64" height="8" rx="4" fill="#FF4E22"/>
+  </g>
+
+  <!-- bar readout -->
+  <g fill="#3157FF" opacity=".9">
+    <rect x="60" y="400" width="12" height="40"/>
+    <rect x="80" y="384" width="12" height="56"/>
+    <rect x="100" y="412" width="12" height="28"/>
+    <rect x="120" y="368" width="12" height="72"/>
+    <rect x="140" y="396" width="12" height="44"/>
+  </g>
+  <g fill="#FF4E22" opacity=".9">
+    <rect x="760" y="392" width="12" height="48"/>
+    <rect x="780" y="360" width="12" height="80"/>
+    <rect x="800" y="404" width="12" height="36"/>
+    <rect x="820" y="376" width="12" height="64"/>
+  </g>
+
+  <text x="60" y="600" font-family="monospace" font-size="12" letter-spacing="3" fill="#F1EFE9" opacity=".4">SCATTERED &#8594; CONNECTED</text>
+</svg>

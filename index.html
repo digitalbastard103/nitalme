@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nital - I make things.</title>
+<meta name="description" content="Nital. Music, ideas, reputations and products. Producer as Seven Stripes, analog marketer, founder of TRKR, SPEQ, I Know a Guy, Busynt and Lunchbox Legion.">
+
+<meta property="og:title" content="Nital - I make things.">
+<meta property="og:description" content="Music, ideas, reputations and products.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nital.me/">
+<meta name="theme-color" content="#F1EFE9">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- paper grain, sits above everything, ignores pointer events -->
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip" href="#sound">Skip to content</a>
+
+<header class="nav" id="nav">
+  <a class="nav__mark" href="#top">NITAL</a>
+  <p class="nav__chapter mono" id="chapter" aria-live="polite"></p>
+  <nav class="nav__links" aria-label="Sections">
+    <a href="#sound">Music</a>
+    <a href="#perception">Work</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+  </nav>
+  <button class="nav__toggle mono" id="navToggle" aria-expanded="false" aria-controls="index">Index</button>
+</header>
+
+<!-- full-screen mobile index -->
+<div class="index" id="index" hidden>
+  <nav aria-label="Site index">
+    <a href="#sound"><span class="mono">01</span> Sound</a>
+    <a href="#perception"><span class="mono">02</span> Perception</a>
+    <a href="#projects"><span class="mono">03</span> Ideas</a>
+    <a href="#lunchbox"><span class="mono">04</span> Lunchbox Legion</a>
+    <a href="#archive"><span class="mono">05</span> Before all this</a>
+    <a href="#about"><span class="mono">06</span> About</a>
+    <a href="#hello"><span class="mono">07</span> Say hello</a>
+  </nav>
+</div>
+
+<main id="top">
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" aria-labelledby="hero-statement">
+    <figure class="hero__photo reveal" data-delay="6">
+      <!-- 4:5 crop of assets/nital-studio.jpg, framed on the chair rather than the desk -->
+      <img src="assets/nital-portrait.jpg" alt="" width="624" height="780">
+    </figure>
+
+    <h1 class="hero__statement" id="hero-statement">
+      <span class="line reveal" data-delay="1">I make <span class="hl hl--sound" data-fragment="assets/cover-01.svg">music</span>,</span>
+      <span class="line reveal" data-delay="2">shape how things are <span class="hl hl--percept" data-fragment="assets/redacted.svg">seen</span>,</span>
+      <span class="line reveal" data-delay="3">and build ideas into <span class="hl hl--ideas" data-fragment="assets/speq.svg">products</span>.</span>
+    </h1>
+
+    <p class="hero__sub reveal" data-delay="4">
+      Lawyer. Economist. MBA.<br>
+      Never particularly interested in staying in one lane.
+    </p>
+
+    <p class="hero__foot mono reveal" data-delay="5" aria-hidden="true"><span class="arrow">↓</span></p>
+  </section>
+
+
+  <!-- ═══════════ THREE FIELDS ═══════════ -->
+  <section class="fields" aria-label="What I do">
+    <a class="field reveal" href="#sound">
+      <span class="field__num mono">01</span>
+      <span class="field__name">SOUND</span>
+      <span class="field__note">Music production as Seven Stripes</span>
+      <span class="field__frag" aria-hidden="true"><img src="assets/cover-02.svg" alt="" width="180" height="180"></span>
+    </a>
+    <a class="field reveal" href="#perception">
+      <span class="field__num mono">02</span>
+      <span class="field__name">PERCEPTION</span>
+      <span class="field__note">Marketing and reputation</span>
+      <span class="field__frag" aria-hidden="true"><img src="assets/redacted.svg" alt="" width="180" height="180"></span>
+    </a>
+    <a class="field reveal" href="#projects">
+      <span class="field__num mono">03</span>
+      <span class="field__name">IDEAS</span>
+      <span class="field__note">Products, platforms and experiments</span>
+      <span class="field__frag" aria-hidden="true"><img src="assets/trkr.svg" alt="" width="180" height="180"></span>
+    </a>
+  </section>
+
+
+  <!-- ═══════════ SEVEN STRIPES ═══════════ -->
+  <section class="sound" id="sound" data-chapter="01 - SOUND" aria-labelledby="sound-h">
+    <!-- seven stripes: warm at one end, cool at the other, paper in the middle -->
+    <div class="stripes" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="wrap">
+      <p class="eyebrow mono reveal">01 - Seven Stripes</p>
+      <h2 class="sound__h reveal" id="sound-h">This is where<br>the noise comes from.</h2>
+
+      <div class="sound__body">
+        <div class="sound__player reveal">
+          <figure class="player" id="player">
+            <div class="player__art">
+              <!-- The disc spins only while audio plays; pausing freezes it in
+                   place rather than resetting, so it resumes where it stopped. -->
+              <div class="record" aria-hidden="true">
+                <div class="record__disc">
+                  <div class="record__label">
+                    <img id="playerArt" src="assets/cover-01.svg" alt="" width="400" height="400">
+                  </div>
+                  <div class="record__spindle"></div>
+                </div>
+                <div class="record__sheen"></div>
+                <div class="record__arm"><i></i></div>
+              </div>
+              <button class="player__play" id="playBtn" type="button" aria-label="Play">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path class="ico ico--play" d="M8 5v14l11-7z"/>
+                  <path class="ico ico--pause" d="M7 5h3.2v14H7zM13.8 5H17v14h-3.2z"/>
+                </svg>
+              </button>
+            </div>
+            <figcaption class="player__meta">
+              <p class="mono player__label" id="playerLabel">Featured</p>
+              <p class="player__title" id="playerTitle">Silver Lining</p>
+              <p class="player__artist" id="playerArtist">Seven Stripes</p>
+
+              <div class="waveform" id="waveform" role="slider" tabindex="0"
+                   aria-label="Seek within track"
+                   aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="0:00">
+                <div class="wf wf--base" aria-hidden="true"></div>
+                <div class="wf wf--played" aria-hidden="true"></div>
+              </div>
+
+              <p class="player__time mono">
+                <span id="timeNow">0:00</span> <span class="player__slash">/</span> <span id="timeTotal">--:--</span>
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="sound__text reveal">
+          <p>I’ve been playing piano and drums - and producing music on a computer - for years. Cubase is still where I feel most at home.</p>
+          <p>In 2014, I flew to Manhattan to study music production at Dubspot, a school dedicated to electronic music and the culture around it.</p>
+          <p>Under the name <em>Seven Stripes</em>, I’ve produced electronic music, original tracks and remixes. More recently, I’ve also started making what people might call “regular songs” - although I’m still not entirely sure what makes a song regular.</p>
+        </div>
+      </div>
+
+      <!-- ─────────────────────────────────────────────────────────────
+           TRACKS. This list is the single source of truth for the player.
+           To add a track: copy an <li>, point data-src at the audio file and
+           data-art at its cover. Order here is the order on the page.
+
+           data-start / data-end play only an excerpt. Accepts "1:12" or plain
+           seconds. Everything the visitor sees - waveform, clock, listed length
+           - is relative to that window, so a preview behaves like a short track
+           and the browser only downloads the part it needs. Omit both and the
+           whole track plays.
+
+           data-dur is the length of the WHOLE file, used only when there is no
+           data-end. Setting it avoids a network request just to read a duration.
+
+           Without JavaScript each row stays a plain link to the audio.
+           ───────────────────────────────────────────────────────────── -->
+      <ol class="tracks reveal" id="tracks">
+        <li class="track" data-src="assets/audio/silver-lining.mp3" data-dur="3:37" data-art="assets/cover-01.svg"
+            data-artist="Seven Stripes">
+          <a class="track__hit" href="assets/audio/silver-lining.mp3">
+            <span class="track__n mono">01</span>
+            <span class="track__title">Silver Lining</span>
+            <span class="track__tag mono">Original</span>
+            <span class="track__dur mono">-</span>
+          </a>
+        </li>
+        <li class="track" data-src="assets/audio/guess-what.mp3" data-dur="5:50" data-art="assets/cover-02.svg"
+            data-artist="Seven Stripes">
+          <a class="track__hit" href="assets/audio/guess-what.mp3">
+            <span class="track__n mono">02</span>
+            <span class="track__title">Guess What</span>
+            <span class="track__tag mono">Original</span>
+            <span class="track__dur mono">-</span>
+          </a>
+        </li>
+        <li class="track" data-src="assets/audio/tidal-lock.mp3" data-dur="3:27" data-art="assets/cover-03.svg"
+            data-artist="Seven Stripes" data-start="0:49" data-end="1:51">
+          <a class="track__hit" href="assets/audio/tidal-lock.mp3">
+            <span class="track__n mono">03</span>
+            <span class="track__title">Tidal Lock</span>
+            <span class="track__tag mono">Original</span>
+            <span class="track__dur mono">-</span>
+          </a>
+        </li>
+        <li class="track" data-src="assets/audio/do-i-wanna-know-remix.mp3" data-dur="3:58" data-art="assets/cover-04.svg"
+            data-artist="Arctic Monkeys · Seven Stripes remix">
+          <a class="track__hit" href="assets/audio/do-i-wanna-know-remix.mp3">
+            <span class="track__n mono">04</span>
+            <span class="track__title">Do I Wanna Know</span>
+            <span class="track__tag mono">Remix</span>
+            <span class="track__dur mono">-</span>
+          </a>
+        </li>
+        <li class="track" data-src="assets/audio/cul-de-sac.mp3" data-dur="3:20" data-art="assets/cover-01.svg"
+            data-artist="Selena Grey · produced by Seven Stripes">
+          <a class="track__hit" href="assets/audio/cul-de-sac.mp3">
+            <span class="track__n mono">05</span>
+            <span class="track__title">Cul De Sac</span>
+            <span class="track__tag mono">Produced</span>
+            <span class="track__dur mono">-</span>
+          </a>
+        </li>
+        <li class="track" data-src="assets/audio/summer-lovin.mp3" data-dur="2:25" data-art="assets/cover-02.svg"
+            data-artist="Selena Grey · produced by Seven Stripes">
+          <a class="track__hit" href="assets/audio/summer-lovin.mp3">
+            <span class="track__n mono">06</span>
+            <span class="track__title">Summer Lovin’</span>
+            <span class="track__tag mono">Produced</span>
+            <span class="track__dur mono">-</span>
+          </a>
+        </li>
+        <li class="track" data-src="assets/audio/comin-soon.mp3" data-dur="0:39" data-art="assets/cover-03.svg"
+            data-artist="Selena Grey · produced by Seven Stripes">
+          <a class="track__hit" href="assets/audio/comin-soon.mp3">
+            <span class="track__n mono">07</span>
+            <span class="track__title">Comin’ Soon</span>
+            <span class="track__tag mono">Teaser</span>
+            <span class="track__dur mono">-</span>
+          </a>
+        </li>
+      </ol>
+
+      <div class="strip reveal" aria-hidden="true">
+        <!-- ASSET SLOT: Seven Stripes cover artwork, square, ~600×600 each.
+             Decorative drift only - the playable list is above. Duplicated
+             exactly twice so the marquee loops seamlessly. -->
+        <img src="assets/cover-01.svg" alt="" width="200" height="200">
+        <img src="assets/cover-02.svg" alt="" width="200" height="200">
+        <img src="assets/cover-03.svg" alt="" width="200" height="200">
+        <img src="assets/cover-04.svg" alt="" width="200" height="200">
+        <img src="assets/cover-01.svg" alt="" width="200" height="200">
+        <img src="assets/cover-02.svg" alt="" width="200" height="200">
+        <img src="assets/cover-03.svg" alt="" width="200" height="200">
+        <img src="assets/cover-04.svg" alt="" width="200" height="200">
+      </div>
+
+      <div class="credits reveal">
+        <p class="mono">Piano, drums and Cubase<br>Manhattan, 2014<br>Dubspot alumnus</p>
+        <p class="credits__links mono">
+          <a href="#" data-link="spotify">Spotify ↗</a>
+          <a href="#" data-link="youtube">YouTube ↗</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ MARKETING ═══════════ -->
+  <section class="percept" id="perception" data-chapter="02 - PERCEPTION" aria-labelledby="percept-h">
+    <div class="wrap">
+      <p class="eyebrow mono reveal">02 - Marketing &amp; Reputation</p>
+      <h2 class="percept__h reveal" id="percept-h">I’m an<br>analog marketer.</h2>
+
+      <div class="percept__col reveal">
+        <p>That doesn’t mean I avoid digital. Digital is useful, powerful and constantly changing - but it is still another tool in the box.</p>
+        <p>The foundations of good marketing haven’t changed all that much: understand people, find the right idea, and communicate it in a way they will actually notice and remember.</p>
+        <p>Over the years, I’ve worked with businesspeople, companies and brands on marketing, creative strategy and reputation - both online and outside it.</p>
+      </div>
+
+      <ul class="redacted reveal">
+        <li>Reputation strategy for <b aria-label="name withheld"></b></li>
+        <li>Digital positioning for <b aria-label="name withheld"></b></li>
+        <li>Creative and marketing work across <b aria-label="name withheld"></b></li>
+      </ul>
+      <p class="redacted__note reveal">The names are private. The work is real.</p>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ PROJECTS ═══════════ -->
+  <section class="projects" id="projects" data-chapter="03 - IDEAS" aria-labelledby="projects-h">
+    <div class="wrap">
+      <p class="eyebrow mono reveal">03 - Things I’m building</p>
+      <h2 class="projects__h reveal" id="projects-h">Apparently, one project<br>is never enough.</h2>
+      <p class="projects__intro reveal">I’ve been starting things for more than twenty years. I’m usually drawn to places where something feels unnecessarily difficult, fragmented or outdated - and where a better system ought to exist.</p>
+    </div>
+
+    <!-- Compact rows rather than full-height bands: four projects scan in one
+         screen instead of four. The whole row is the link - .band__go stretches
+         over it - so the arrow is an affordance, not the only hit area. -->
+    <div class="bands">
+
+      <article class="band" id="trkr" style="--accent:#12B76A">
+        <p class="band__num mono">01</p>
+        <div class="band__text">
+          <h3 class="band__name">TRKR</h3>
+          <p class="band__line">Smarter tools for fitness coaches.</p>
+          <p class="band__body">Training, nutrition, progress and communication, brought together in one branded home - instead of five different tools.</p>
+        </div>
+        <figure class="band__visual">
+          <!-- ASSET SLOT: TRKR product screenshot -->
+          <img src="assets/trkr.svg" alt="TRKR coaching dashboard" width="900" height="640" loading="lazy">
+          <span class="band__badge mono">Active</span>
+        </figure>
+        <a class="band__go" href="https://trkr.fit" target="_blank" rel="noopener" aria-label="Visit TRKR">↗</a>
+      </article>
+
+      <article class="band" id="speq" style="--accent:#3157FF">
+        <p class="band__num mono">02</p>
+        <div class="band__text">
+          <h3 class="band__name">SPEQ</h3>
+          <p class="band__line">A better way for companies to buy things.</p>
+          <p class="band__body">Structured procurement and supplier proposals, without the emails, spreadsheets and vague quotes.</p>
+        </div>
+        <figure class="band__visual">
+          <!-- ASSET SLOT: SPEQ product screenshot -->
+          <img src="assets/speq.svg" alt="SPEQ proposal comparison view" width="900" height="640" loading="lazy">
+          <span class="band__badge mono">Active</span>
+        </figure>
+        <a class="band__go" href="#" target="_blank" rel="noopener" aria-label="Visit SPEQ">↗</a>
+      </article>
+
+      <article class="band" id="ikag" style="--accent:#FF4E22">
+        <p class="band__num mono">03</p>
+        <div class="band__text">
+          <h3 class="band__name">I Know a Guy</h3>
+          <p class="band__line">Recommendations through people you already trust.</p>
+          <p class="band__body">Nobody starts with anonymous reviews. They ask someone they trust - a social system built around that question.</p>
+        </div>
+        <figure class="band__visual">
+          <!-- ASSET SLOT: I Know a Guy interface or network visual -->
+          <img src="assets/ikag.svg" alt="A network of connected recommendations" width="900" height="640" loading="lazy">
+          <span class="band__badge mono">In progress</span>
+        </figure>
+        <a class="band__go" href="#" target="_blank" rel="noopener" aria-label="Visit I Know a Guy">↗</a>
+      </article>
+
+      <article class="band" id="busynt" style="--accent:#111111">
+        <p class="band__num mono">04</p>
+        <div class="band__text">
+          <h3 class="band__name">Busynt</h3>
+          <p class="band__line">Making sense of business information.</p>
+          <p class="band__body">Connecting scattered signals and turning them into something you can actually act on.</p>
+        </div>
+        <figure class="band__visual">
+          <!-- ASSET SLOT: Busynt interface -->
+          <img src="assets/busynt.svg" alt="Fragments of business data being connected" width="900" height="640" loading="lazy">
+          <span class="band__badge mono">In progress</span>
+        </figure>
+        <a class="band__go" href="#" target="_blank" rel="noopener" aria-label="Visit Busynt">↗</a>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════ LUNCHBOX LEGION - the disruption ═══════════ -->
+  <section class="lunchbox" id="lunchbox" data-chapter="04 - LUNCHBOX LEGION" aria-labelledby="lunch-h">
+    <div class="lunchbox__inner">
+      <p class="eyebrow mono reveal">Project 05 - no relation to the rest of this website</p>
+      <h2 class="lunchbox__h reveal" id="lunch-h">Cafeteria food has<br>finally fought back.</h2>
+      <div class="lunchbox__text reveal">
+        <p>A gross-out collectible card game inspired by the strange, tactile and slightly inappropriate card collections of the 1990s.</p>
+        <p>A radioactive meteorite mutates forgotten cafeteria food into a legion of sentient monsters that fight for dominance - one greasy, disgusting card at a time.</p>
+        <p>It’s funny, unpleasant and deliberately hand-drawn, with simple playground-style gameplay and none of the polished digital perfection that makes everything look the same.</p>
+        <p class="lunchbox__cta"><a href="#">Enter the Lunchroom ↗</a></p>
+      </div>
+    </div>
+    <div class="cards" aria-hidden="true">
+      <!-- ASSET SLOT: two or three real Lunchbox Legion cards -->
+      <img src="assets/card-1.svg" alt="" width="300" height="420" loading="lazy">
+      <img src="assets/card-2.svg" alt="" width="300" height="420" loading="lazy">
+      <img src="assets/card-3.svg" alt="" width="300" height="420" loading="lazy">
+    </div>
+  </section>
+
+
+  <!-- ═══════════ ARCHIVE ═══════════ -->
+  <section class="archive" id="archive" data-chapter="05 - BEFORE ALL THIS" aria-labelledby="archive-h">
+    <div class="wrap">
+      <h2 class="archive__h reveal" id="archive-h">Before all this</h2>
+      <p class="archive__sub reveal mono">Early internet archaeology</p>
+
+      <div class="archive__grid">
+        <article class="relic reveal">
+          <div class="relic__chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <div class="relic__url mono">http://www.the-race.com</div>
+          </div>
+          <!-- ASSET SLOT: any surviving screenshot of The Race -->
+          <img src="assets/race.svg" alt="Screenshot of The Race, 2003" width="640" height="440" loading="lazy">
+          <div class="relic__cap">
+            <h3><span class="mono">2003 -</span> The Race</h3>
+            <p>An online popularity competition before social media made that everyone’s full-time job. Each participant had to recruit as many friends as possible to vote for them.</p>
+            <p class="relic__note">An early lesson in online communities, attention, and the extraordinary lengths people will go to win something on the internet.</p>
+          </div>
+        </article>
+
+        <article class="relic reveal">
+          <div class="relic__chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <div class="relic__url mono">http://www.travelgurus.com</div>
+          </div>
+          <!-- ASSET SLOT: any surviving screenshot of TravelGurus -->
+          <img src="assets/travelgurus.svg" alt="Screenshot of TravelGurus" width="640" height="440" loading="lazy">
+          <div class="relic__cap">
+            <h3>TravelGurus</h3>
+            <p>A digital travel agency from an earlier chapter of the internet.</p>
+            <p class="relic__note">Another attempt to take an established, traditional industry and rethink how people could experience it online - something I still seem to be doing, just in different fields.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section class="about" id="about" data-chapter="06 - ABOUT" aria-labelledby="about-h">
+    <div class="wrap about__grid">
+      <figure class="about__photo reveal">
+        <img src="assets/nital-studio.jpg" alt="Nital in his studio" width="1536" height="1024" loading="lazy">
+      </figure>
+      <div class="about__text reveal">
+        <h2 id="about-h">Twenty years<br>of “what if?”</h2>
+        <p>I don’t really have one career. I have a collection of things I’ve been curious enough to pursue: music, marketing, reputation, technology, games, and businesses that started with the feeling that there had to be a better - or at least more interesting - way.</p>
+        <p>These might sound like separate worlds. To me they’re variations of the same thing: finding an idea, giving it a clear form, and putting it in front of people.</p>
+        <p class="about__aside">Somewhere along the way, I also became a lawyer, an economist, and earned an MBA.</p>
+        <p>This site is where they all live together.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="hello" id="hello" data-chapter="07 - SAY HELLO">
+    <div class="wrap">
+      <h2 class="hello__h reveal">Something on<br>your mind?</h2>
+      <p class="hello__body reveal">Music, marketing, one of the projects, or an idea that doesn’t have a name yet.</p>
+      <nav class="hello__links reveal" aria-label="Contact">
+        <a href="mailto:hello@nital.me">Email</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener">Spotify</a>
+        <a href="#" target="_blank" rel="noopener">YouTube</a>
+      </nav>
+      <p class="hello__note mono reveal">No funnel. No newsletter popup. Just an email.</p>
+      <p class="hello__copy mono">© <span id="year">2026</span> Nital · nital.me</p>
+    </div>
+  </footer>
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>

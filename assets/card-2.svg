@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <defs>
+    <filter id="rough2"><feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="2" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6"/></filter>
+  </defs>
+  <rect width="300" height="420" rx="10" fill="#F5E9C8"/>
+  <rect x="8" y="8" width="284" height="404" rx="6" fill="none" stroke="#2A1D0E" stroke-width="4" filter="url(#rough2)"/>
+  <rect x="20" y="20" width="260" height="240" fill="#D65A20" filter="url(#rough2)"/>
+
+  <!-- sentient jelly cube -->
+  <g filter="url(#rough2)">
+    <rect x="82" y="86" width="136" height="120" rx="12" fill="#7EA82A" opacity=".92"/>
+    <rect x="96" y="98" width="108" height="94" rx="10" fill="#9CCB3A" opacity=".9"/>
+    <circle cx="122" cy="136" r="17" fill="#F5E9C8"/>
+    <circle cx="180" cy="136" r="17" fill="#F5E9C8"/>
+    <circle cx="126" cy="140" r="8" fill="#2A1D0E"/>
+    <circle cx="176" cy="140" r="8" fill="#2A1D0E"/>
+    <ellipse cx="150" cy="176" rx="26" ry="16" fill="#2A1D0E"/>
+    <path d="M96 206 q14 26 26 4 q14 26 28 2 q14 26 28 2 q14 24 26 -2" stroke="#7EA82A" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <circle cx="232" cy="106" r="7" fill="#9CCB3A"/>
+    <circle cx="64" cy="180" r="5" fill="#9CCB3A"/>
+  </g>
+
+  <text x="150" y="300" font-family="monospace" font-size="20" font-weight="bold" fill="#2A1D0E" text-anchor="middle" letter-spacing="1">JELL-O TERROR</text>
+  <text x="150" y="326" font-family="monospace" font-size="11" fill="#8A6E44" text-anchor="middle" letter-spacing="2">STILL MOVING</text>
+  <line x1="34" y1="344" x2="266" y2="344" stroke="#2A1D0E" stroke-width="2" opacity=".4"/>
+  <text x="34" y="374" font-family="monospace" font-size="12" fill="#2A1D0E">WOBBLE</text>
+  <text x="266" y="374" font-family="monospace" font-size="12" fill="#D65A20" text-anchor="end">12</text>
+  <text x="34" y="396" font-family="monospace" font-size="12" fill="#2A1D0E">STENCH</text>
+  <text x="266" y="396" font-family="monospace" font-size="12" fill="#2A1D0E" text-anchor="end">04</text>
+</svg>

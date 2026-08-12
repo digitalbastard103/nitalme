@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#F1EFE9"/>
+  <g stroke="#111111" stroke-width="10">
+    <path d="M0 340 L400 60"/>
+    <path d="M0 300 L400 20"/>
+    <path d="M0 380 L400 100"/>
+  </g>
+  <g stroke="#3157FF" stroke-width="10">
+    <path d="M0 420 L400 140"/>
+    <path d="M0 460 L400 180"/>
+  </g>
+  <g stroke="#FF4E22" stroke-width="10">
+    <path d="M0 500 L400 220"/>
+    <path d="M0 540 L400 260"/>
+  </g>
+  <rect x="0" y="0" width="400" height="400" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="28" y="46" font-family="monospace" font-size="12" letter-spacing="4" fill="#111111">07</text>
+</svg>

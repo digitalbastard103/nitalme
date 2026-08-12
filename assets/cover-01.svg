@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#111111"/>
+  <g fill="#F1EFE9">
+    <rect x="40" y="60" width="320" height="14"/>
+    <rect x="40" y="94" width="280" height="14"/>
+    <rect x="40" y="128" width="240" height="14"/>
+    <rect x="40" y="162" width="200" height="14"/>
+    <rect x="40" y="196" width="160" height="14"/>
+    <rect x="40" y="230" width="120" height="14"/>
+  </g>
+  <rect x="40" y="264" width="80" height="14" fill="#FF4E22"/>
+  <circle cx="300" cy="290" r="46" fill="none" stroke="#3157FF" stroke-width="8"/>
+  <text x="40" y="352" font-family="monospace" font-size="13" letter-spacing="3" fill="#F1EFE9" opacity=".55">SEVEN STRIPES</text>
+</svg>
