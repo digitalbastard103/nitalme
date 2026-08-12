@@ -567,22 +567,20 @@ h1,h2,h3{ font-weight:400; margin:0; }
 .strip img:hover{ filter:none; transform:translateY(-.5rem); }
 @keyframes drift{ to{ transform:translateX(-50%); } }
 
-.credits{
-  display:flex; justify-content:space-between; align-items:flex-end;
-  gap:2rem; flex-wrap:wrap;
-  margin-top:clamp(2.5rem,6vh,4rem);
-  padding-top:1.5rem;
-  border-top:1px solid var(--rule);
+.sound__head{
+  display:flex; justify-content:space-between; align-items:baseline;
+  flex-wrap:wrap; gap:1rem .8rem;
+  margin-bottom:clamp(3rem,8vh,5rem);
 }
-.credits p{ margin:0; color:var(--ink-mute); line-height:2; }
-.credits__links{ display:flex; gap:1.5rem; }
-.credits__links a{
+.sound__head .eyebrow{ margin-bottom:0; }   /* the row now owns the spacing */
+.sound__links{ display:flex; gap:1.5rem; margin:0; }
+.sound__links a{
   text-decoration:none; color:var(--paper);
   border-bottom:1px solid rgba(241,239,233,.3);
   padding-bottom:2px;
   transition:border-color .3s var(--ease), color .3s var(--ease);
 }
-.credits__links a:hover{ color:var(--orange); border-color:var(--orange); }
+.sound__links a:hover{ color:var(--orange); border-color:var(--orange); }
 
 
 /* ═══════════ PERCEPTION ═══════════ */
@@ -968,7 +966,6 @@ h1,h2,h3{ font-weight:400; margin:0; }
   .nav__chapter{ display:none; }
   .track__hit{ grid-template-columns:2.25rem 1fr 3.25rem; }
   .track__tag{ display:none; }
-  .credits{ flex-direction:column; align-items:flex-start; }
   .redacted{ line-height:2.1; }
 }
 
