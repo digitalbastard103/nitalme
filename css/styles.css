@@ -675,6 +675,14 @@ h1,h2,h3{ font-weight:400; margin:0; }
   transition:transform .6s var(--slow);
 }
 .band:hover .band__visual img{ transform:translateY(-.25rem); }
+
+/* A single top-left crop suited the old placeholder mockups, but real
+   screenshots each have their own point of interest, and a uniform left
+   bias was cutting through it — SPEQ's wordmark is centered, and "THE GUY"
+   circle in the whiteboard sits near the right edge, not the left. */
+#trkr .band__visual img{ object-position:center top; }
+#speq .band__visual img{ object-position:center; }
+#ikag .band__visual img{ object-position:right center; }
 .band__visual::before{               /* accent rule drawn in on reveal */
   content:""; position:absolute; inset:auto 0 -1px 0;
   height:2px; background:var(--accent);
