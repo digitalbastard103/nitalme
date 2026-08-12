@@ -41,18 +41,6 @@
     document.querySelectorAll('.band').forEach(function (b) { bandIO.observe(b); });
   }
 
-  /* ── hero word fragments ───────────────────────────────── */
-  document.querySelectorAll('.hl[data-fragment]').forEach(function (word) {
-    var frag = document.createElement('span');
-    frag.className = 'frag';
-    frag.setAttribute('aria-hidden', 'true');
-    var img = document.createElement('img');
-    img.src = word.getAttribute('data-fragment');
-    img.alt = '';
-    frag.appendChild(img);
-    word.appendChild(frag);
-  });
-
   /* ── chapter indicator in the nav ──────────────────────── */
   var chapter = document.getElementById('chapter');
   var chaptered = document.querySelectorAll('[data-chapter]');
