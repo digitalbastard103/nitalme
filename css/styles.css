@@ -508,8 +508,13 @@ h1,h2,h3{ font-weight:400; margin:0; }
   margin:clamp(2.5rem,7vh,4rem) 0 0;
   padding:0;
   border-top:1px solid var(--rule);
+  /* two columns above the mobile breakpoint: fills 1-4 left, 5-7 right,
+     rather than one tall single-file list */
+  columns:2;
+  column-gap:clamp(2rem,4vw,4rem);
+  column-rule:1px solid var(--rule);
 }
-.track{ border-bottom:1px solid var(--rule); }
+.track{ border-bottom:1px solid var(--rule); break-inside:avoid; }
 .track__hit{
   display:grid;
   grid-template-columns:3rem 1fr auto 4rem;
@@ -936,6 +941,7 @@ h1,h2,h3{ font-weight:400; margin:0; }
   .player{ grid-template-columns:1fr; }
   .record{ max-width:min(360px, 78vw); margin-inline:auto; }
   .track__hit{ grid-template-columns:2.75rem 1fr auto 3.5rem; gap:.75rem; padding:1rem .25rem; }
+  .tracks{ columns:1; column-rule:none; }
 
   .percept__col{ margin-right:0; }
 
