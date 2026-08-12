@@ -20,7 +20,7 @@ All copy is in `index.html`, in reading order. Section landmarks:
 | -             | Three fields: SOUND / PERCEPTION / IDEAS  |
 | `#sound`      | Seven Stripes (dark chapter)               |
 | `#perception` | Marketing & reputation                     |
-| `#projects`   | TRKR, SPEQ, I Know a Guy, Busynt           |
+| `#projects`   | TRKR, SPEQ, I Know a Guy, B-Synth          |
 | `#lunchbox`   | Lunchbox Legion (the deliberate disruption)|
 | `#about`      | About                                      |
 | `#hello`      | Footer / contact                           |
@@ -32,11 +32,11 @@ Change them there and they propagate everywhere.
 
 **Links still pointing at `#`** - search `index.html` for `href="#"`:
 
-- [ ] Seven Stripes → Spotify (in `#sound` credits, and again in the footer)
-- [ ] Seven Stripes → YouTube (same two places)
-- [ ] SPEQ → its URL
+- [x] ~~Seven Stripes → Spotify~~ - done, verified real
+- [x] ~~Seven Stripes → YouTube~~ - done, verified real
+- [x] ~~SPEQ → its URL~~ - done, verified real (speq.co.il)
 - [ ] I Know a Guy → its URL
-- [ ] Busynt → its URL
+- [ ] B-Synth → its URL
 - [ ] Lunchbox Legion → its URL
 - [ ] LinkedIn → your profile
 - [ ] Email → currently `hello@nital.me`; change if you want a different address
@@ -52,7 +52,7 @@ automatically; if you switch format (`.svg` → `.jpg`), update the `src`.
       in warm monochrome via a CSS `filter`; delete the `grayscale(1) sepia(.16)` from
       `.hero__photo` and `.about__photo` to show them in colour.
 - [ ] `cover-01..04.svg` - Seven Stripes cover artwork, still placeholder, square
-- [x] ~~`trkr.jpg`, `speq.jpg`, `ikag.jpg`, `busynt.jpg`~~ - done, real screenshots
+- [x] ~~`trkr.jpg`, `speq.jpg`, `ikag.jpg`, `b-synth.jpg`~~ - done, real screenshots
 - [x] ~~`card-1..3.jpg`~~ - done, real Lunchbox Legion card art
 
 Both photos are rendered greyscale with `mix-blend-mode: multiply`, so they sit into the
