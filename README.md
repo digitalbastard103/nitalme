@@ -22,7 +22,6 @@ All copy is in `index.html`, in reading order. Section landmarks:
 | `#perception` | Marketing & reputation                     |
 | `#projects`   | TRKR, SPEQ, I Know a Guy, Busynt           |
 | `#lunchbox`   | Lunchbox Legion (the deliberate disruption)|
-| `#archive`    | The Race, TravelGurus                      |
 | `#about`      | About                                      |
 | `#hello`      | Footer / contact                           |
 
@@ -52,10 +51,9 @@ automatically; if you switch format (`.svg` → `.jpg`), update the `src`.
       `nital-portrait.jpg` is a 4:5 crop of the same frame for the hero. Both are rendered
       in warm monochrome via a CSS `filter`; delete the `grayscale(1) sepia(.16)` from
       `.hero__photo` and `.about__photo` to show them in colour.
-- [ ] `cover-01..04.svg` - Seven Stripes cover artwork, square
-- [ ] `trkr.svg`, `speq.svg`, `ikag.svg`, `busynt.svg` - product screenshots, roughly 900×640
-- [ ] `card-1..3.svg` - real Lunchbox Legion cards
-- [ ] `race.svg`, `travelgurus.svg` - any surviving screenshots
+- [ ] `cover-01..04.svg` - Seven Stripes cover artwork, still placeholder, square
+- [x] ~~`trkr.jpg`, `speq.jpg`, `ikag.jpg`, `busynt.jpg`~~ - done, real screenshots
+- [x] ~~`card-1..3.jpg`~~ - done, real Lunchbox Legion card art
 
 Both photos are rendered greyscale with `mix-blend-mode: multiply`, so they sit into the
 paper rather than on top of it. Colour originals are fine - the CSS handles it.
