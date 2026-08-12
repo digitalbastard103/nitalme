@@ -849,12 +849,7 @@ h1,h2,h3{ font-weight:400; margin:0; }
   .hero{ padding-top:6.5rem; min-height:auto; }
   .hero__statement{ margin-top:clamp(2rem,9vh,4rem); order:1; }
   .hero__sub{ order:2; }
-  .hero__photo{
-    position:static;
-    width:clamp(110px,32vw,170px);
-    margin:2.5rem 0 0 auto;
-    order:3;
-  }
+  .hero__photo{ display:none; }   /* real estate is tighter here; the studio shot in About carries this */
   .hero__foot{ order:4; margin-top:clamp(2rem,7vh,3.5rem); padding-top:0; }
 
   .field{
