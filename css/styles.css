@@ -324,7 +324,9 @@ h1,h2,h3{ font-weight:400; margin:0; }
 
 .sound__h{
   font-family:var(--serif);
-  font-size:clamp(2.4rem,7vw,6.5rem);
+  /* bigger mobile floor than the other section heads on purpose - this
+     heading has more breathing room around it than Perception's does */
+  font-size:clamp(3rem,7vw,6.5rem);
   line-height:1; letter-spacing:-.02em;
   margin-bottom:clamp(3rem,8vh,5rem);
 }
