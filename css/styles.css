@@ -861,10 +861,9 @@ h1,h2,h3{ font-weight:400; margin:0; }
     gap:.5rem .75rem;
   }
   .field__go{ grid-column:3; }
-  .field__note{
-    grid-column:1 / -1; text-align:left; justify-self:start;
-    font-size:.6875rem; margin-top:.25rem;
-  }
+  /* no hover on mobile, so the note text has no reason to exist here -
+     it just read as clutter next to a clean number/title/arrow row */
+  .field__note{ display:none; }
 
   .sound__grid{ grid-template-columns:1fr; }
   .player{ grid-template-columns:1fr; }
