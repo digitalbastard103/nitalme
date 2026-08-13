@@ -139,12 +139,24 @@
                 <div class="record__sheen"></div>
                 <div class="record__arm"><i></i></div>
               </div>
-              <button class="player__play" id="playBtn" type="button" aria-label="Play">
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path class="ico ico--play" d="M8 5v14l11-7z"/>
-                  <path class="ico ico--pause" d="M7 5h3.2v14H7zM13.8 5H17v14h-3.2z"/>
-                </svg>
-              </button>
+              <div class="player__controls">
+                <button class="player__nav" id="prevBtn" type="button" aria-label="Previous track">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M6 6h2.4v12H6z"/><path d="M19 6.5 9 12l10 5.5z"/>
+                  </svg>
+                </button>
+                <button class="player__play" id="playBtn" type="button" aria-label="Play">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path class="ico ico--play" d="M8 5v14l11-7z"/>
+                    <path class="ico ico--pause" d="M7 5h3.2v14H7zM13.8 5H17v14h-3.2z"/>
+                  </svg>
+                </button>
+                <button class="player__nav" id="nextBtn" type="button" aria-label="Next track">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M15.6 6H18v12h-2.4z"/><path d="M5 6.5 15 12 5 17.5z"/>
+                  </svg>
+                </button>
+              </div>
             </div>
             <figcaption class="player__meta">
               <p class="mono player__label" id="playerLabel">Featured</p>

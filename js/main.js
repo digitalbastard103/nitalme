@@ -373,12 +373,23 @@
 
     playBtn.addEventListener('click', toggle);
 
-    rows.forEach(function (row, i) {
-      row.querySelector('.track__hit').addEventListener('click', function (e) {
-        e.preventDefault();          /* without JS this stays a link to the file */
-        if (i === current) toggle();
-        else load(i, true);
-      });
+    /* Wrap around at either end - a dead-ended "next" on the last track
+       would be an odd stop for a browsing control, not a playlist that
+       genuinely ends. Autoplay-to-next on natural finish (see finish()
+       above) still stops at the last track; only these buttons loop.
+
+       Before anything has actually been loaded, current is -1, but track 0
+       is already the one showing (the "Featured" first-paint state). Treat
+       that as position 0 for navigation too - otherwise the very first
+       "next" press just reloads what's already on screen instead of
+       visibly moving forward, which reads as the button doing nothing. */
+    var prevBtn = document.getElementById('prevBtn');
+    var nextBtn = document.getElementById('nextBtn');
+    if (prevBtn) prevBtn.addEventListener('click', function () {
+      load(current < 0 ? rows.length - 1 : (current - 1 + rows.length) % rows.length, true);
+    });
+    if (nextBtn) nextBtn.addEventListener('click', function () {
+      load(current < 0 ? 1 : (current + 1) % rows.length, true);
     });
 
     /* ── scrubbing ── */
@@ -433,46 +444,9 @@
       if (len > 0) progress((target - lo) / len, target - lo);
     });
 
-    /* ── first paint, and durations once the chapter is in view ── */
+    /* ── first paint ── */
     drawWave(titleOf(rows[0]));
     titleEl.textContent = titleOf(rows[0]);
-
-    /* Held deliberately: a detached Audio with no reference can be collected
-       before loadedmetadata fires, and the durations silently never arrive. */
-    var probes = [];
-
-    function fillDurations() {
-      rows.forEach(function (row) {
-        var cell = row.querySelector('.track__dur');
-
-        /* An excerpt's length is known from its own start/end - and it must win
-           over data-dur, which is the length of the whole file. */
-        var c = clipOf(row);
-        if (c.end !== null) { cell.textContent = clock(c.end - c.start); return; }
-
-        /* A baked-in data-dur costs nothing. Only reach for the network when
-           a row hasn't got one - e.g. a track added without updating it. */
-        var known = row.getAttribute('data-dur');
-        if (known) { cell.textContent = known; return; }
-
-        var probe = new Audio();
-        probes.push(probe);
-        probe.preload = 'metadata';
-        probe.addEventListener('loadedmetadata', function () {
-          row.querySelector('.track__dur').textContent = clock(probe.duration);
-        });
-        probe.addEventListener('error', function () {
-          row.querySelector('.track__dur').textContent = '--:--';
-        });
-        probe.src = row.getAttribute('data-src');
-      });
-    }
-
-    /* Deliberately NOT gated on IntersectionObserver: browsers suspend IO in
-       hidden/background tabs, which left the durations permanently blank.
-       Idle time is late enough to stay out of the way of first paint. */
-    if (window.requestIdleCallback) requestIdleCallback(fillDurations, { timeout: 3000 });
-    else setTimeout(fillDurations, 1200);
   })();
 
   /* ── footer year ───────────────────────────────────────── */

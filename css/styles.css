@@ -451,10 +451,14 @@ h1,h2,h3{ font-weight:400; margin:0; }
 
 /* play / pause - parked in the corner the disc doesn't reach, so it never
    covers the label artwork the way a centred control would */
-.player__play{
-  position:absolute; left:2%; bottom:2%;
-  z-index:3;
-  width:clamp(54px,4.8vw,72px); aspect-ratio:1;
+/* play/prev/next as one cluster in the corner the disc doesn't reach,
+   replacing the removed track list as the way to browse the seven tracks */
+.player__controls{
+  position:absolute; left:2%; bottom:2%; z-index:3;
+  display:flex; align-items:center; gap:.6rem;
+}
+.player__play, .player__nav{
+  aspect-ratio:1;
   display:grid; place-items:center;
   border:0; border-radius:50%;
   background:var(--paper); color:var(--ink);
@@ -462,8 +466,10 @@ h1,h2,h3{ font-weight:400; margin:0; }
   transition:background-color .3s var(--ease), color .3s var(--ease), scale .4s var(--slow);
   box-shadow:0 .75rem 1.5rem -.5rem rgba(0,0,0,.6);
 }
-.player__play:hover{ background:var(--orange); color:var(--paper); scale:1.06; }
-.player__play svg{ width:42%; height:42%; fill:currentColor; }
+.player__play{ width:clamp(54px,4.8vw,72px); }
+.player__nav{ width:clamp(38px,3.4vw,50px); }
+.player__play:hover, .player__nav:hover{ background:var(--orange); color:var(--paper); scale:1.06; }
+.player__play svg, .player__nav svg{ width:42%; height:42%; fill:currentColor; }
 .player__play .ico--pause,
 .player.is-playing .player__play .ico--play{ display:none; }
 .player.is-playing .player__play .ico--pause{ display:block; }
@@ -495,17 +501,10 @@ h1,h2,h3{ font-weight:400; margin:0; }
 .player__slash{ opacity:.5; }
 
 /* ── track list ────────────────────────────────────────────── */
-.tracks{
-  list-style:none;
-  margin:clamp(2.5rem,7vh,4rem) 0 0;
-  padding:0;
-  border-top:1px solid var(--rule);
-  /* two columns above the mobile breakpoint: fills 1-4 left, 5-7 right,
-     rather than one tall single-file list */
-  columns:2;
-  column-gap:clamp(2rem,4vw,4rem);
-  column-rule:1px solid var(--rule);
-}
+/* The list stays in the DOM as the player's data source (see the HTML
+   comment above <ol class="tracks">) but is no longer shown - prev/next
+   on the featured player replaced it as the way to browse tracks. */
+.tracks{ display:none; }
 .track{ border-bottom:1px solid var(--rule); break-inside:avoid; }
 .track__hit{
   display:grid;

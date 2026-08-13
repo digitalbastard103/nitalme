@@ -73,8 +73,10 @@ to web-safe names (no spaces, brackets or apostrophes in URLs):
 
 Track 01 is the one loaded as "Featured" - reorder the list to change that.
 
-To add, remove or reorder tracks, edit the `<ol class="tracks">` list in `index.html`. Each
-`<li>` carries:
+**The list itself is no longer visible.** It stays in `index.html` as the player's data
+source (`display:none`), and browsing happens via the prev/next buttons on the featured
+player instead, which cycle through the list in order and wrap at either end. To add, remove
+or reorder tracks, edit the `<ol class="tracks">` list. Each `<li>` carries:
 
 - `data-src` - the audio file (the row's `href` should match it)
 - `data-art` - the cover shown in the featured player
