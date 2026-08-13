@@ -449,10 +449,11 @@ h1,h2,h3{ font-weight:400; margin:0; }
 }
 .player__artist{ margin:.15rem 0 1.25rem; color:var(--ink-60); font-size:.9rem; }
 
-/* play / pause - parked in the corner the disc doesn't reach, so it never
-   covers the label artwork the way a centred control would */
 /* play/prev/next as one cluster in the corner the disc doesn't reach,
-   replacing the removed track list as the way to browse the seven tracks */
+   replacing the removed track list as the way to browse the seven tracks.
+   Only play is a bold solid control - prev/next stay quiet, glassy discs
+   that read as part of the record's own surface rather than a UI kit
+   dropped on top of it (echoing .record__sheen's reflective highlight). */
 .player__controls{
   position:absolute; left:2%; bottom:2%; z-index:3;
   display:flex; align-items:center; gap:.6rem;
@@ -460,15 +461,31 @@ h1,h2,h3{ font-weight:400; margin:0; }
 .player__play, .player__nav{
   aspect-ratio:1;
   display:grid; place-items:center;
-  border:0; border-radius:50%;
-  background:var(--paper); color:var(--ink);
+  border-radius:50%;
   cursor:pointer;
-  transition:background-color .3s var(--ease), color .3s var(--ease), scale .4s var(--slow);
+  transition:background-color .3s var(--ease), border-color .3s var(--ease),
+             color .3s var(--ease), scale .4s var(--slow);
+}
+.player__play{
+  width:clamp(54px,4.8vw,72px);
+  border:0;
+  background:var(--paper); color:var(--ink);
   box-shadow:0 .75rem 1.5rem -.5rem rgba(0,0,0,.6);
 }
-.player__play{ width:clamp(54px,4.8vw,72px); }
-.player__nav{ width:clamp(38px,3.4vw,50px); }
-.player__play:hover, .player__nav:hover{ background:var(--orange); color:var(--paper); scale:1.06; }
+.player__play:hover{ background:var(--orange); color:var(--paper); scale:1.06; }
+
+.player__nav{
+  width:clamp(34px,3vw,44px);
+  border:1px solid rgba(241,239,233,.22);
+  background:rgba(241,239,233,.08);
+  color:rgba(241,239,233,.75);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+}
+.player__nav:hover{
+  background:rgba(241,239,233,.18); border-color:rgba(241,239,233,.4); color:var(--paper); scale:1.06;
+}
+
 .player__play svg, .player__nav svg{ width:42%; height:42%; fill:currentColor; }
 .player__play .ico--pause,
 .player.is-playing .player__play .ico--play{ display:none; }
