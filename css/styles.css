@@ -707,8 +707,10 @@ h1,h2,h3{ font-weight:400; margin:0; }
 /* ═══════════ LUNCHBOX LEGION ═══════════ */
 .lunchbox{
   position:relative;
-  margin-top:clamp(6rem,16vh,11rem);
-  padding:clamp(5rem,12vh,8rem) 0 clamp(9rem,22vh,14rem);
+  margin-top:clamp(4rem,10vh,7rem);
+  /* was up to 14rem of bottom padding just to clear the cards - the section
+     read as much taller than the four project rows above it as a result */
+  padding:clamp(4rem,9vh,6rem) 0 clamp(6rem,14vh,9rem);
   background:#F5E9C8;
   color:#2A1D0E;
   overflow:hidden;
@@ -738,11 +740,11 @@ h1,h2,h3{ font-weight:400; margin:0; }
 .lunchbox .eyebrow{ color:#8A6E44; }
 .lunchbox__h{
   font-family:var(--serif);
-  font-size:clamp(2.6rem,8vw,7rem);
+  font-size:clamp(2.4rem,7vw,6.5rem);
   line-height:.96; letter-spacing:-.02em;
   rotate:-1.2deg;
   text-shadow:3px 3px 0 rgba(42,29,14,.12);
-  margin-bottom:2rem;
+  margin-bottom:1.5rem;
 }
 .lunchbox__text{ max-width:44ch; }
 .lunchbox__text p{ margin:0 0 1.1rem; }
