@@ -132,8 +132,10 @@ waveform. Drawing real peaks means decoding each file in the browser with the We
 which is a meaningful amount of extra download and code. Say the word if you want it.
 
 **Content still to confirm**
-- [ ] The three redacted client lines in `#perception` - the bar widths are set in CSS
-      (`.redacted b`), so adjust them if the real phrasing needs different proportions.
+- [ ] The three redacted client lines in `#perception` sit in the `.dossier` "confidential
+      file" card. Each bar's maximum width is a `--w` variable on its `li` in the
+      `.redacted` rules in CSS, so adjust those if the real phrasing needs different
+      proportions. The stamp text ("Confidential") is in the HTML.
 
 ## Deploying
 
