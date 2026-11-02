@@ -624,6 +624,14 @@ h1,h2,h3{ font-weight:400; margin:0; }
   font-size:clamp(1.1rem,2vw,1.5rem);
   color:var(--ink-60);
 }
+/* one-line pointer from the marketing chapter to the Periscope row below */
+.percept__tool{ margin:2.25rem 0 0; max-width:52ch; font-size:.95rem; color:var(--ink-60); }
+.percept__tool a{
+  color:var(--ink); text-decoration:none;
+  border-bottom:1px solid var(--orange);
+  transition:color .3s var(--ease);
+}
+.percept__tool a:hover{ color:var(--orange); }
 
 
 /* ═══════════ PROJECTS ═══════════ */
@@ -794,6 +802,48 @@ h1,h2,h3{ font-weight:400; margin:0; }
 @keyframes sway{ 0%,100%{ translate:0 0; } 50%{ translate:0 -.9rem; } }
 
 
+/* ═══════════ THE BOOK ═══════════
+   Slim on purpose - Lunchbox Legion already read as too dominant once, and
+   this should feel like a pause before About, not another chapter. */
+.book{ padding:clamp(4rem,10vh,7rem) 0 0; }
+.book + .about{ padding-top:clamp(3rem,8vh,5rem); }   /* don't stack two big gaps */
+.book__grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,.9fr);
+  gap:clamp(2rem,5vw,4.5rem);
+  align-items:center;
+}
+.book__card{
+  display:block;
+  box-shadow:0 1.5rem 3rem -1.75rem rgba(17,17,17,.45);
+  rotate:-1deg;
+  transition:transform .6s var(--slow), rotate .6s var(--slow);
+}
+.book__card:hover{ transform:translateY(-.3rem); rotate:0deg; }
+.book__card img{ width:100%; }
+.book__text .eyebrow{ margin-bottom:1rem; }
+.book__h{
+  font-family:var(--serif);
+  font-size:clamp(2rem,4.2vw,3.6rem);
+  line-height:1; letter-spacing:-.02em;
+  margin-bottom:1.25rem;
+}
+.book__blurb{ max-width:40ch; color:var(--ink-60); margin:0 0 1.75rem; }
+.book__blurb em{ font-style:italic; color:var(--ink); }
+.book__links{ display:flex; flex-wrap:wrap; gap:.75rem; margin:0; }
+.book__btn{
+  display:inline-flex; align-items:center; gap:.6rem;
+  padding:.9rem 1.4rem;
+  border:1px solid var(--ink);
+  font-family:var(--mono); font-size:.6875rem; letter-spacing:.14em; text-transform:uppercase;
+  text-decoration:none; color:var(--ink);
+  transition:background-color .3s var(--ease), color .3s var(--ease);
+}
+.book__btn span{ display:inline-block; transition:transform .3s var(--slow); }
+.book__btn:hover{ background:var(--ink); color:var(--paper); }
+.book__btn:hover span{ transform:translate(.15rem,-.15rem); }
+
+
 /* ═══════════ ABOUT ═══════════ */
 .about{ padding:clamp(6rem,16vh,11rem) 0; }
 /* the photograph is landscape, so it takes the wider column */
@@ -904,6 +954,7 @@ h1,h2,h3{ font-weight:400; margin:0; }
   .band__go{ align-self:start; padding-top:.25rem; }
 
   .about__grid{ grid-template-columns:1fr; }
+  .book__grid{ grid-template-columns:1fr; }
 
   .cards{ position:relative; right:auto; bottom:auto; margin-top:3rem;
           justify-content:center; padding-inline:var(--gut); }

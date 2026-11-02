@@ -20,8 +20,9 @@ All copy is in `index.html`, in reading order. Section landmarks:
 | -             | Three fields: SOUND / PERCEPTION / IDEAS  |
 | `#sound`      | Seven Stripes (dark chapter)               |
 | `#perception` | Marketing & reputation                     |
-| `#projects`   | TRKR, SPEQ, I Know a Guy, B-Synth          |
+| `#projects`   | TRKR, SPEQ, I Know a Guy, B-Synth, Periscope |
 | `#lunchbox`   | Lunchbox Legion (the deliberate disruption)|
+| `#book`       | The book, F*ck, I'm 40 (slim strip)        |
 | `#about`      | About                                      |
 | `#hello`      | Footer / contact                           |
 
@@ -54,6 +55,10 @@ automatically; if you switch format (`.svg` → `.jpg`), update the `src`.
 - [ ] `cover-01..04.svg` - Seven Stripes cover artwork, still placeholder, square
 - [x] ~~`trkr.jpg`, `speq.jpg`, `ikag.jpg`, `b-synth.jpg`~~ - done, real screenshots
 - [x] ~~`card-1..3.jpg`~~ - done, real Lunchbox Legion card art
+- [x] `periscope.png` - the Periscope share card from discovernur.com, extended to 3:2 so the
+      project row doesn't slice through its headline. Swap in a product screenshot if you prefer.
+- [x] `book.png` - the typographic title card from nitaljoseph.com (not a photo of the cover;
+      replace with the real cover if you want one - it's 1200x630, any 1.9:1 image works)
 
 Both photos are rendered greyscale with `mix-blend-mode: multiply`, so they sit into the
 paper rather than on top of it. Colour originals are fine - the CSS handles it.
